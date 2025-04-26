@@ -6,6 +6,7 @@ import * as React from "react";
 import Hero from "./components/Hero/Hero.tsx";
 import {Navbar} from "./components/Navbar/Navbar.tsx";
 import BestBooks from "./components/BestBooks/BestBooks.tsx";
+import Popup from "./components/popup/Popup.tsx";
 function App() {
     const [orderPopup, setOrderPopup] = React.useState(false);
     const handleOrderPopup = () => {
@@ -26,7 +27,7 @@ function App() {
                 <Navbar handleOrderPopup={handleOrderPopup} />
                 <Hero handleOrderPopup={handleOrderPopup}/>
                 <BestBooks handleOrderPopup={handleOrderPopup}/>
-
+                <Popup handleOrderPopup={handleOrderPopup} orderPopup={orderPopup}/>
 
             </div>
         </>

@@ -5,6 +5,7 @@ import * as React from "react";
 
 import Hero from "./components/Hero/Hero.tsx";
 import {Navbar} from "./components/Navbar/Navbar.tsx";
+import BestBooks from "./components/BestBooks/BestBooks.tsx";
 function App() {
     const [orderPopup, setOrderPopup] = React.useState(false);
     const handleOrderPopup = () => {
@@ -24,6 +25,7 @@ function App() {
             <div className="bg-white duration-200">
                 <Navbar handleOrderPopup={handleOrderPopup} />
                 <Hero handleOrderPopup={handleOrderPopup}/>
+                <BestBooks handleOrderPopup={handleOrderPopup}/>
 
 
             </div>

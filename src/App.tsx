@@ -8,6 +8,7 @@ import {Navbar} from "./components/Navbar/Navbar.tsx";
 import BestBooks from "./components/BestBooks/BestBooks.tsx";
 import Popup from "./components/popup/Popup.tsx";
 import Banner from "./components/Banner/Banner.tsx";
+import AppStoreBanner from "./components/AppStoreBanner/AppStoreBanner.tsx";
 function App() {
     const [orderPopup, setOrderPopup] = React.useState(false);
     const handleOrderPopup = () => {
@@ -29,6 +30,7 @@ function App() {
                 <Hero handleOrderPopup={handleOrderPopup}/>
                 <BestBooks handleOrderPopup={handleOrderPopup}/>
                 <Banner/>
+                <AppStoreBanner/>
                 <Popup handleOrderPopup={handleOrderPopup} orderPopup={orderPopup}/>
 
             </div>
